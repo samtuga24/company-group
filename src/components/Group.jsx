@@ -12,8 +12,8 @@ export const Group = () => {
             <div className='group-wrap'>
                 <div className='group-header'>Our Group</div>
                 <div className='group-list'>
-                    <div className='group-list-item' onClick={() => { window.open("https://www.jemaenergy.co/", "_blank"); }}>
-                        <div className='group-list-wrap'>
+                    <div className='group-list-item'>
+                        <div className='group-list-wrap'  onClick={() => { window.open("https://www.jemaenergy.co/", "_blank"); }}>
                             <div className='group-list-item-icon-wrap'>
                                 <div className='group-list-icon'><img src={jema} alt="" /></div>
                             </div>
@@ -22,8 +22,8 @@ export const Group = () => {
                         </div>
                     </div>
 
-                    <div className='group-list-item' onClick={() => { window.open("https://www.ekamlearning.com/", "_blank"); }}>
-                        <div className='group-list-wrap'>
+                    <div className='group-list-item'>
+                        <div className='group-list-wrap' onClick={() => { window.open("https://www.ekamlearning.com/", "_blank"); }}>
                             <div className='group-list-item-icon-wrap'>
                                 <div className='group-list-icon'><img src={learning} alt="" /></div>
                             </div>
@@ -44,8 +44,8 @@ export const Group = () => {
                 </div>
 
                 <div className='group-list-1'>
-                    <div className='group-list-item' onClick={() => { window.open("https://www.jemgro.com/", "_blank"); }}>
-                        <div className='group-list-wrap'>
+                    <div className='group-list-item'>
+                        <div className='group-list-wrap' onClick={() => { window.open("https://www.jemgro.com/", "_blank"); }}>
                             <div className='group-list-item-icon-wrap'>
                                 <div className='group-list-icon'><img src={jemgro} alt="" /></div>
                             </div>
@@ -53,8 +53,8 @@ export const Group = () => {
                             <div className='group-list-item-desc'>ugiueg ijoeiwjoiwjo pojwppw ff f ffijoifh2oihoi2oioi ih2oho2ioif2iopo io2ihoih oih2oih</div>
                         </div>
                     </div>
-                    <div className='group-list-item' onClick={() => { window.open("https://www.jeminesresourcesltd.com/", "_blank"); }}>
-                        <div className='group-list-wrap'>
+                    <div className='group-list-item'>
+                        <div className='group-list-wrap'  onClick={() => { window.open("https://www.jeminesresourcesltd.com/", "_blank"); }}>
                             <div className='group-list-item-icon-wrap'>
                                 <div className='group-list-icon'><img src={jemines} alt="" /></div>
                             </div>
@@ -63,8 +63,8 @@ export const Group = () => {
                         </div>
                     </div>
 
-                    <div className='group-list-item' onClick={() => { window.open("https://www.cwasminrealtyandconstruction.com/", "_blank"); }}>
-                        <div className='group-list-wrap'>
+                    <div className='group-list-item'>
+                        <div className='group-list-wrap' onClick={() => { window.open("https://www.cwasminrealtyandconstruction.com/", "_blank"); }}>
                             <div className='group-list-item-icon-wrap'>
                                 <div className='group-list-icon'><img src={cwasmin} alt="" /></div>
                             </div>
