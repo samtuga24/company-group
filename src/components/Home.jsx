@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import learning from '../images/learn.png'
+import { gsap } from 'gsap'
 export const Home = () => {
-  return (
-    <div className='home-container'>
-        <div className='home-wrap'>
-            <div className='home'><img src={learning} alt="" /></div>
-            <div className='home'><img src={learning} alt="" /></div>
-            <div className='home'><img src={learning} alt="" /></div>
-            <div className='home'><img src={learning} alt="" /></div>
-            <div className='home'><img src={learning} alt="" /></div>
-            <div className='home'><img src={learning} alt="" /></div>
+    const tl = gsap.timeline()
+    useEffect(() => {
+      tl.fromTo('.home-intro',{x: '-100vw'},{ x: '0vw', ease: "power4.inOut",duration: 2.2 })
+    
+    }, [])
+    return (
+        <div className='home-container'>
+            <div className='home-wrap'>
+                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={learning} alt="" /></div>
+            </div>
+
+            <div className='home-intro'>
+                A diversified group of <br/>companies at your service</div>
         </div>
-    </div>
-  )
+    )
 }
