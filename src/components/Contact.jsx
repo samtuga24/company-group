@@ -4,7 +4,7 @@ import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-
 import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 export const Contact = () => {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
       <div className='contact-wrap'>
         <div className='contact-1'>
           <div className='header-1'>Get in touch</div>
