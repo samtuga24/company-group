@@ -539,8 +539,8 @@ textarea{
   }
 
   .home-intro{
-    top: 50px;
-    left: 0;
+    top: 250px;
+    left: 20px;
     font-size: 40px;
   }
 
@@ -561,7 +561,7 @@ textarea{
     
   }
   .about-image{
-
+    display: none;
   }
   
   .about-2{
