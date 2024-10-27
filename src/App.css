@@ -111,7 +111,7 @@ body{
   display: none;
   background-color: #FFFFFF;
   transform: left 1s;
-  z-index: 1;
+  z-index: 13;
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 0px 20px 60px 0px #0000000D;
@@ -158,22 +158,21 @@ body{
   font-family: Montserrat-semi;
 }
 .home-container{
-  border: 2px solid red;
   height: 550px;
   position: relative;
 }
 .home-wrap{
   display: flex;
   flex: 6;
+  height: inherit;
 }
 .home{
   flex: 1;
-  border: 2px solid blue;
 }
 .home-intro{
   height: fit;
   position: absolute;
-  top: 150px;
+  top: 250px;
   left: 150px;
   font-size: 50px;
   font-family: Montserrat-semi;
@@ -182,6 +181,7 @@ body{
 }
 .home img{
   width: 100%;
+  height: 100%;
 }
 .about-container{
   height: auto;
@@ -302,6 +302,7 @@ a{
   background-color: #FFFFFF;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow-x: hidden;
 }
 .contact-wrap{
   width: 90%;
@@ -324,6 +325,7 @@ a{
 .social-wrap-2{
   display: flex;
   margin-top: 50px;
+  width: 90%;
 }
 .social-1{
   border: 2px solid black;
@@ -366,7 +368,7 @@ a{
   flex-direction: column;
   justify-content: end;
   align-items: end;
-
+  
 }
 .form-input-wrap{
   border: 2px solid black;
@@ -455,8 +457,9 @@ textarea{
 
 @media screen and (max-width: 1020px) and (min-width:50px){
   body{
-      margin: 0;
-      padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-right: 0px;
   }
   *{
     margin: 0;
@@ -487,15 +490,24 @@ textarea{
     margin-top: 10px;
   }
 
+  .contact-container{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   .contact-wrap{
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   .contact-2{
+    padding-left: 5%;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     width: 100%;
+  }
+
+  .contact-1{
+    padding-left: 5%;
   }
 
   .social-wrap-2{
@@ -545,6 +557,8 @@ textarea{
   .about-1{
     padding-left: 0px;
     justify-content: center;
+    margin-top: 50px;
+    
   }
   .about-image{
 
@@ -554,7 +568,6 @@ textarea{
     text-align: center;
   }
   .footer-container{
-    border: 5px solid green;
     width: 100%;
   }
 }

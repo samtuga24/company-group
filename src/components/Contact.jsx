@@ -1,8 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 export const Contact = () => {
+  const [inputName, setName] = useState("");
+  const [inputEmail, setEmail] = useState("");
+  const [inputMessage, setMessage] = useState("");
+  const isValidEmail = (inputEmail) => {
+    return /\S+@\S+\.\S+/.test(inputEmail);
+}
+  const submitContact = () =>{
+
+    let nameLength;
+    let emailLength;
+    let validEmail;
+    let message;
+
+    if (inputName.trim().length == 0) {
+        nameLength = false;
+        alert("Please Enter Full Name")
+    } else {
+
+        nameLength = true;
+    }
+
+    if(nameLength){
+      if(inputEmail.trim().length == 0){
+        emailLength = false;
+        alert("Please Enter Email")
+      } else{
+        emailLength = true;
+      }
+    }
+    if(emailLength){
+      if(isValidEmail(inputEmail)){
+        validEmail = true;
+       
+      } else{
+        validEmail = false;
+        alert("Please Enter a valid Email")
+      }
+    }
+
+    if(validEmail){
+      if(inputMessage.trim().length == 0){
+        message = false;
+        alert("Please Enter message")
+      } else{
+        message = true;
+      }
+    }
+    if(nameLength && emailLength && validEmail && message){
+      alert("all set")
+    }
+  }
   return (
     <div className='contact-container' id='contact'>
       <div className='contact-wrap'>
@@ -32,23 +83,23 @@ export const Contact = () => {
         <div className='contact-2'>
           <div className='form-input-wrap'>
             <div className='form-label'>Full Name</div>
-            <input type="text" className='form-input' />
+            <input type="text" value={inputName} onChange={(e) => setName(e.target.value)} className='form-input' />
           </div>
 
           <div className='form-input-wrap-1'>
             <div className='form-label'>Email Address</div>
-            <input type="text" className='form-input' />
+            <input type="text" value={inputEmail} onChange={(e) => setEmail(e.target.value)} className='form-input' />
           </div>
 
           
 
           <div className='form-input-wrap-2'>
             <div className='form-label'>Message</div>
-            <textarea type="text" className='' maxLength="200" />
+            <textarea type="text" value={inputMessage} onChange={(e) => setMessage(e.target.value)} className='' maxLength="200" />
           </div>
 
           <div className='contact-btn-wrap'>
-            <div className='contact-btn'>send message</div>
+            <div className='contact-btn' onClick={submitContact}>send message</div>
           </div>
         </div>
       </div>

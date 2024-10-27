@@ -15,15 +15,15 @@ import { NavProvider } from './context/NavContext';
 import { useEffect } from 'react';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 function App() {
-  useGSAP(() => {
-    gsap.to(".about-container", {
-      scrollTrigger: {
-        trigger: ".about-container",
-        pin: true
-        // toggleActions: "restart none none none",
-      }
-    })
-  })
+  // useGSAP(() => {
+  //   gsap.to(".about-container", {
+  //     scrollTrigger: {
+  //       trigger: ".about-container",
+  //       pin: true,
+  //       start: "top top",
+  //     }
+  //   })
+  // })
   return (
     <NavProvider>
       <Nav />

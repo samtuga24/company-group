@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
-import learning from '../images/learn.png'
+import cwasmin from '../images/cwasmin.jpg'
+import finance from '../images/finance.png'
+import jemgro from '../images/jemgro.png'
 import { gsap } from 'gsap'
 export const Home = () => {
     const tl = gsap.timeline()
@@ -10,12 +12,9 @@ export const Home = () => {
     return (
         <div className='home-container'>
             <div className='home-wrap'>
-                <div className='home'><img src={learning} alt="" /></div>
-                <div className='home'><img src={learning} alt="" /></div>
-                <div className='home'><img src={learning} alt="" /></div>
-                <div className='home'><img src={learning} alt="" /></div>
-                <div className='home'><img src={learning} alt="" /></div>
-                <div className='home'><img src={learning} alt="" /></div>
+                <div className='home'><img src={cwasmin} alt="" /></div>
+                <div className='home'><img src={finance} alt="" /></div>
+                <div className='home'><img src={jemgro} alt="" /></div>
             </div>
 
             <div className='home-intro'>

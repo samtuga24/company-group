@@ -38,7 +38,7 @@ export const Group = () => {
                                 <div className='group-list-icon'><img src={capital} alt="" /></div>
                             </div>
                             <div className='group-list-item-header'>EKAM CAPITAL</div>
-                            <div className='group-list-item-desc'>EKAM Capital is a leading pan-African finance firm. At EKAM Capital, we pride ourselves on delivering unparalleled financial expertise and tailored solutions by empowering your financial journey with innovative, sustainable, and tailor-made solutions. </div>
+                            <div className='group-list-item-desc'>A Premier Financial Services Firm Guided by Research, Driven by Insight </div>
                         </div>
                     </div>
                 </div>
