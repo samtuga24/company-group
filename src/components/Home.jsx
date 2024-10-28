@@ -21,6 +21,10 @@ export const Home = () => {
                 <div className='home-intro'>A diversified group of</div>
                 <div className='sub-intro'>companies at your service</div>
             </div>
+
+            <div className='mobile-intro-wrap'>
+                <div className='home-intro'>A diversified group ofcompanies at your service</div>
+            </div>
                 
         </div>
     )
