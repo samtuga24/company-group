@@ -23,7 +23,7 @@ export const Home = () => {
             </div>
 
             <div className='mobile-intro-wrap'>
-                <div className='home-intro'>A diversified group ofcompanies at your service</div>
+                <div className='home-intro'>A diversified group of companies at your service</div>
             </div>
                 
         </div>

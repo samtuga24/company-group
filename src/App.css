@@ -609,9 +609,10 @@ textarea{
     display: none;
   }
   .mobile-intro-wrap{
-    left: 20px;
+    left: 15px;
     width: fit-content;
     font-size: 40px;
     display: block;
+    padding-right: 5px;
   }
 }
