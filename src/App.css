@@ -267,6 +267,7 @@ a{
   display: flex;
   flex: 3;
   margin-top: 50px;
+  cursor: pointer;
 }
 .group-list-item{
   flex: 1;
