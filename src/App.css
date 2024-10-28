@@ -594,4 +594,7 @@ textarea{
   .footer-container{
     width: 100%;
   }
+  .home-intro-wrap{
+    left: 30px;
+  }
 }
