@@ -597,5 +597,6 @@ textarea{
   .home-intro-wrap{
     left: 30px;
     width: fit-content;
+    font-size: 40px;
   }
 }
