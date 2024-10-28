@@ -20,7 +20,8 @@ function App() {
   //     scrollTrigger: {
   //       trigger: ".about-container",
   //       pin: true,
-  //       start: "top top",
+  //       start: "top center",
+  //       end: "+=850"
   //     }
   //   })
   // })

@@ -169,11 +169,21 @@ body{
 .home{
   flex: 1;
 }
+.home-intro-wrap{
+  position: absolute;
+  bottom: 100px;
+  width: 800px;
+  left: 150px;
+}
 .home-intro{
   height: fit;
-  position: absolute;
-  top: 250px;
-  left: 150px;
+  font-size: 50px;
+  font-family: Montserrat-semi;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.sub-intro{
+  height: fit;
   font-size: 50px;
   font-family: Montserrat-semi;
   color: #FFFFFF;
@@ -184,14 +194,15 @@ body{
   height: 100%;
 }
 .about-container{
-  height: auto;
+  height: 700px;
   padding-right: 5%;
+  border: 2px solid #FFFFFF;
 }
 .about-wrap{
   display: flex;
   width: 100%;
   flex: 2;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .about-1{
@@ -224,14 +235,15 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
-  background-color: #f6f6f8;
+  background-color: #f4f4f9;
   padding-top: 80px;
   padding-bottom: 100px;
   z-index: 1;
+
 }
 .group-wrap{
   width: 90%;
+  
 }
 .group-header{
   display: flex;
@@ -254,6 +266,7 @@ a{
 .group-list-1{
   display: flex;
   flex: 3;
+  margin-top: 50px;
 }
 .group-list-item{
   flex: 1;
@@ -263,7 +276,17 @@ a{
 }
 .group-list-wrap{
   width: 70%;
-  height: 340px;
+  height: 300px;
+  padding: 20px;
+  color: gray;
+}
+.group-list-wrap:hover{
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px 0px #3b3a3a0d;
+  height: 300px;
+  color: #000000;
 }
 .group-list-item-icon-wrap{
   display: flex;
