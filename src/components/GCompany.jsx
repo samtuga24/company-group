@@ -1,4 +1,10 @@
 import React from 'react'
+
+import l1 from '../icons/learning.png'
+import c1 from '../icons/capital.png'
+import j1 from '../icons/jemgro.png'
+import j2 from '../icons/jemines.png'
+import c2 from '../icons/cwasmin.png'
 import jema from '../icons/jema.png'
 import cwas from '../images/cwas.jpg'
 import capital from '../images/capital.jpg'
@@ -32,7 +38,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'><img src={teach} alt="" /></div>
                             <div className='jema-back'>
-                                <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
+                                <div className='jema-icon'><div className='icon-wrap'><img src={l1} alt="" /></div></div>
                                 <div className='j-header'>EKAM LEARNING</div>
                                 <div className='j-desc'>EKAM Learning Solutions is dedicated to pioneering innovative approaches that enable organizations to grow and function optimally with an agile, empowered workforce.</div>
                                 <div className='j-btn'>
@@ -47,7 +53,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'><img src={capital} alt="" /></div>
                             <div className='jema-back'>
-                                <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
+                                <div className='jema-icon'><div className='icon-wrap'><img src={c1} alt="" /></div></div>
                                 <div className='j-header'>EKAM CAPITAL</div>
                                 <div className='j-desc'>A Premier Financial Services Firm Guided by Research, Driven by Insight</div>
                                 <div className='j-btn'>
@@ -63,7 +69,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'><img src={jemgro} alt="" /></div>
                             <div className='jema-back'>
-                                <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
+                                <div className='jema-icon'><div className='icon-wrap'><img src={j1} alt="" /></div></div>
                                 <div className='j-header'>JEMGRO</div>
                                 <div className='j-desc'>At Jemgro, we offer a range of services designed to support and advance agricultural practicesh</div>
                                 <div className='j-btn'>
@@ -78,7 +84,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'><img src={jems} alt="" /></div>
                             <div className='jema-back'>
-                                <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
+                                <div className='jema-icon'><div className='icon-wrap'><img src={j2} alt="" /></div></div>
                                 <div className='j-header'>Je'mines resources</div>
                                 <div className='j-desc'>Your Trusted Partner in Sourcing, Trading, Assaying, and Exporting Precious Commodities, Committed to Delivering Unmatched Quality and Transparency Across Every Transaction, Every Time.</div>
                                 <div className='j-btn'>
@@ -93,7 +99,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'><img src={cwas} alt="" /></div>
                             <div className='jema-back'>
-                                <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
+                                <div className='jema-icon'><div className='icon-wrap'><img src={c2} alt="" /></div></div>
                                 <div className='j-header'>CWASMIN</div>
                                 <div className='j-desc'>CWASMIN Realty & Construction is more than just a construction company. Cwasmin symbolizes what ethical business leadership looks like by delivering on projects of purpose that create a lasting positive legacy.</div>
                                 <div className='j-btn'>
