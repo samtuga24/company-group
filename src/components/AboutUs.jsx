@@ -1,11 +1,11 @@
 import React from 'react'
-
+import about from '../images/about.jpg'
 export const AboutUs = () => {
   return (
     <div className='about-container'>
         <div className='about-wrap'>
             <div className='about-1'>
-                <div className='about-image'></div>
+                <div className='about-image'><img src={about} alt="" /></div>
             </div>
             <div className='about-2'>
                 <div className='about-header'>About the Ekam Group</div>
