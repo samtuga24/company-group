@@ -294,7 +294,7 @@ body{
   height: 100%;
   border-radius: 8px;
 }
-.jema-front, .jema-back{
+.jema-front, .jema-back, .front-icon{
   position: absolute;
   width: 100%;
   height: 100%;
