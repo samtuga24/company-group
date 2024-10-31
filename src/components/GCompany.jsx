@@ -11,7 +11,7 @@ import capital from '../images/capital.jpg'
 import jenergy from '../images/jenergy.jpg'
 import jems from '../images/jems.jpg'
 import teach from '../images/teach.jpg'
-import jemgro from '../images/newjem.jpg'
+import jemgro from '../images/jemgro.png'
 // import capital from '../images/capital.jpg'
 export const GCompany = () => {
     return (
