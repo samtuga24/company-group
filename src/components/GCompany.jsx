@@ -100,11 +100,11 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={jems} alt="" /></div>           
-                            <div className='front-icon'>Je'mines resources</div>
+                            <div className='front-icon'>JE'MINES RESOURCES</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={j2} alt="" /></div></div>
-                                <div className='j-header'>Je'mines resources</div>
+                                <div className='j-header'>JE'MINES RESOURCES</div>
                                 <div className='j-desc'>Your Trusted Partner in Sourcing, Trading, Assaying, and Exporting Precious Commodities, Committed to Delivering Unmatched Quality and Transparency Across Every Transaction, Every Time.
                                 </div>
                                 <div className='j-btn'>
@@ -119,11 +119,11 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={cwas} alt="" /></div>           
-                            <div className='front-icon'>CWASMIN</div>
+                            <div className='front-icon'>CWASMIN REALTY AND CONSTRUCTION</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={c2} alt="" /></div></div>
-                                <div className='j-header'>CWASMIN</div>
+                                <div className='j-header'>CWASMIN REALTY AND CONSTRUCTION</div>
                                 <div className='j-desc'>CWASMIN Realty & Construction is a premier real estate and construction firm headquartered in Accra, Ghana. With a steadfast commitment to innovation, integrity, and customer satisfaction, we provide comprehensive infrastructure solutions and high-quality construction services.</div>
                                 <div className='j-btn'>
                                     <div className='btn-5' onClick={() => { window.open("http://www.cwasminrealtyandconstruction.com", "_blank"); }}>Visit Us</div>
