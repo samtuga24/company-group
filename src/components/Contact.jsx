@@ -8,8 +8,8 @@ export const Contact = () => {
   const [inputMessage, setMessage] = useState("");
   const isValidEmail = (inputEmail) => {
     return /\S+@\S+\.\S+/.test(inputEmail);
-}
-  const submitContact = () =>{
+  }
+  const submitContact = () => {
 
     let nameLength;
     let emailLength;
@@ -17,40 +17,40 @@ export const Contact = () => {
     let message;
 
     if (inputName.trim().length == 0) {
-        nameLength = false;
-        alert("Please Enter Full Name")
+      nameLength = false;
+      alert("Please Enter Full Name")
     } else {
 
-        nameLength = true;
+      nameLength = true;
     }
 
-    if(nameLength){
-      if(inputEmail.trim().length == 0){
+    if (nameLength) {
+      if (inputEmail.trim().length == 0) {
         emailLength = false;
         alert("Please Enter Email")
-      } else{
+      } else {
         emailLength = true;
       }
     }
-    if(emailLength){
-      if(isValidEmail(inputEmail)){
+    if (emailLength) {
+      if (isValidEmail(inputEmail)) {
         validEmail = true;
-       
-      } else{
+
+      } else {
         validEmail = false;
         alert("Please Enter a valid Email")
       }
     }
 
-    if(validEmail){
-      if(inputMessage.trim().length == 0){
+    if (validEmail) {
+      if (inputMessage.trim().length == 0) {
         message = false;
         alert("Please Enter message")
-      } else{
+      } else {
         message = true;
       }
     }
-    if(nameLength && emailLength && validEmail && message){
+    if (nameLength && emailLength && validEmail && message) {
       alert("all set")
     }
   }
@@ -59,7 +59,8 @@ export const Contact = () => {
       <div className='contact-wrap'>
         <div className='contact-1'>
           <div className='header-1'>Get in touch</div>
-          <div className='social-wrap'>
+          <div className='c-time'>Reach our team Mon - Fri from 08h30m to 17h00m</div>
+          {/* <div className='social-wrap'>
             <div className='social-1'><FontAwesomeIcon icon={faPhone} /></div>
             <div className='social-text'>+233249628340</div>
           </div>
@@ -67,18 +68,22 @@ export const Contact = () => {
           <div className='social-wrap'>
             <div className='social-1'><FontAwesomeIcon icon={faEnvelope} /></div>
             <div className='social-text'>example@abc.com</div>
-          </div>
+          </div> */}
 
           <div className='social-wrap'>
-            <div className='social-1'><FontAwesomeIcon icon={faLocationDot} /></div>
-            <div className='social-text'>Accra</div>
+            <div className='c-visit'>Visit Us</div>
+            <div className='social-text'>50 Onyasia Crescent Roman Ridge, Accra</div>
+            <div className='location-wrap'>
+              <div className='social-1'><FontAwesomeIcon icon={faLocationDot} /></div>
+              <div className='loc-text'>GA-088-8014</div>
+            </div>
           </div>
 
-          <div className='social-wrap-2'>
+          {/* <div className='social-wrap-2'>
             <div className='social-2'><FontAwesomeIcon icon={faFacebook} /></div>
             <div className='social-2'><FontAwesomeIcon icon={faInstagram} /></div>
             <div className='social-2'><FontAwesomeIcon icon={faXTwitter} /></div>
-          </div>
+          </div> */}
         </div>
         <div className='contact-2'>
           <div className='form-input-wrap'>
@@ -91,7 +96,7 @@ export const Contact = () => {
             <input type="text" value={inputEmail} onChange={(e) => setEmail(e.target.value)} className='form-input' />
           </div>
 
-          
+
 
           <div className='form-input-wrap-2'>
             <div className='form-label'>Message</div>
