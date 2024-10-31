@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import cwasmin from '../images/cwasmin.jpg'
 import finance from '../images/finance.png'
-import jemgro from '../images/jemgro.png'
+import jemgro from '../images/newjem.jpg'
 import { gsap } from 'gsap'
 export const Home = () => {
     const tl = gsap.timeline()
