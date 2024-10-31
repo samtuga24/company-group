@@ -1,22 +1,32 @@
 import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 export const Contact = () => {
-  const [inputName, setName] = useState("");
-  const [inputEmail, setEmail] = useState("");
-  const [inputMessage, setMessage] = useState("");
+  const [input_name, setName] = useState("");
+  const [input_email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const service_id="service_gpda17j"
+  const template_id="template_u21pndj"
+    const public_key="Obj2B5j1AKUvCwT5a"
   const isValidEmail = (inputEmail) => {
     return /\S+@\S+\.\S+/.test(inputEmail);
+  }
+  const sendForm={
+    input_name: input_name,
+    input_email: input_email,
+    message: message
   }
   const submitContact = () => {
 
     let nameLength;
     let emailLength;
     let validEmail;
-    let message;
+    let messageLength;
 
-    if (inputName.trim().length == 0) {
+    if (input_name.trim().length == 0) {
       nameLength = false;
       alert("Please Enter Full Name")
     } else {
@@ -25,7 +35,7 @@ export const Contact = () => {
     }
 
     if (nameLength) {
-      if (inputEmail.trim().length == 0) {
+      if (input_email.trim().length == 0) {
         emailLength = false;
         alert("Please Enter Email")
       } else {
@@ -33,7 +43,7 @@ export const Contact = () => {
       }
     }
     if (emailLength) {
-      if (isValidEmail(inputEmail)) {
+      if (isValidEmail(input_email)) {
         validEmail = true;
 
       } else {
@@ -43,15 +53,24 @@ export const Contact = () => {
     }
 
     if (validEmail) {
-      if (inputMessage.trim().length == 0) {
-        message = false;
+      if (message.trim().length == 0) {
+        messageLength = false;
         alert("Please Enter message")
       } else {
-        message = true;
+        messageLength = true;
       }
     }
-    if (nameLength && emailLength && validEmail && message) {
-      alert("all set")
+    if (nameLength && emailLength && validEmail && messageLength) {
+      emailjs.send(service_id, template_id, sendForm, public_key)
+      .then((response)=>{
+        setName("")
+        setEmail("")
+        setMessage("")
+        alert("message sent successfully")
+      })
+      .catch((error)=>{
+        console.log(error)
+      })
     }
   }
   return (
@@ -88,19 +107,19 @@ export const Contact = () => {
         <div className='contact-2'>
           <div className='form-input-wrap'>
             <div className='form-label'>Full Name</div>
-            <input type="text" value={inputName} onChange={(e) => setName(e.target.value)} className='form-input' />
+            <input type="text" value={input_name} onChange={(e) => setName(e.target.value)} className='form-input' />
           </div>
 
           <div className='form-input-wrap-1'>
             <div className='form-label'>Email Address</div>
-            <input type="text" value={inputEmail} onChange={(e) => setEmail(e.target.value)} className='form-input' />
+            <input type="text" value={input_email} onChange={(e) => setEmail(e.target.value)} className='form-input' />
           </div>
 
 
 
           <div className='form-input-wrap-2'>
             <div className='form-label'>Message</div>
-            <textarea type="text" value={inputMessage} onChange={(e) => setMessage(e.target.value)} className='' maxLength="200" />
+            <textarea type="text" value={message} onChange={(e) => setMessage(e.target.value)} className='' maxLength="200" />
           </div>
 
           <div className='contact-btn-wrap'>
