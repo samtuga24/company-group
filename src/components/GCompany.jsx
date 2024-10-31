@@ -11,7 +11,7 @@ import capital from '../images/capital.jpg'
 import jenergy from '../images/jenergy.jpg'
 import jems from '../images/jems.jpg'
 import teach from '../images/teach.jpg'
-import jemgro from '../images/jemgro.png'
+import jemgro from '../images/newjem.jpg'
 // import capital from '../images/capital.jpg'
 export const GCompany = () => {
     return (
@@ -23,7 +23,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                                 <div className='j-front'><img src={jenergy} alt="" /></div>           
-                                <div className='front-icon'><img src={jema} alt="" /></div>
+                                <div className='front-icon'>JEMA ENERGY</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={jema} alt="" /></div></div>
@@ -42,7 +42,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={teach} alt="" /></div>           
-                            <div className='front-icon'><img src={l1} alt="" /></div>
+                            <div className='front-icon'>EKAM LEARNING</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={l1} alt="" /></div></div>
@@ -61,7 +61,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={capital} alt="" /></div>           
-                            <div className='front-icon'><img src={c1} alt="" /></div>
+                            <div className='front-icon'>EKAM CAPITAL</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={c1} alt="" /></div></div>
@@ -81,7 +81,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={jemgro} alt="" /></div>           
-                            <div className='front-icon'><img src={j1} alt="" /></div>
+                            <div className='front-icon'>JEMGRO</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={j1} alt="" /></div></div>
@@ -100,7 +100,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={jems} alt="" /></div>           
-                            <div className='front-icon'><img src={j2} alt="" /></div>
+                            <div className='front-icon'>Je'mines resources</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={j2} alt="" /></div></div>
@@ -119,7 +119,7 @@ export const GCompany = () => {
                         <div className='jema-inner'>
                             <div className='jema-front'>
                             <div className='j-front'><img src={cwas} alt="" /></div>           
-                            <div className='front-icon'><img src={c2} alt="" /></div>
+                            <div className='front-icon'>CWASMIN</div>
                             </div>
                             <div className='jema-back'>
                                 <div className='jema-icon'><div className='icon-wrap'><img src={c2} alt="" /></div></div>
